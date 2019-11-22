@@ -1,0 +1,32 @@
+
+##MUST
+Users must be able to easily navigate the site being able to reach another page within 4 clicks
+The website must contain a home/splash screen, an about me page, a portfolio page and a place for people to contact me.
+The Portfolio page must contain some form of blog or posting allowing users to see my latest projects]
+The Contact Page must contain a email address that i check regularly.
+-Create HomePage
+-Create AboutMe Page
+-Create Portfolio Page
+-Create Contact Page
+
+##SHOULD
+The website should be appealing to the eye
+The portfolio should contain videos and images of the work i create/ worked on
+All images should be stored in a wat that allows for easy access and management of the files
+-Create main css for all pages
+-Create a Asset Directory (for videos, images)
+
+##COULD
+the site could have a interests page that is linked from the about me screen if people are interested in what i do in my free time.
+The site could have interation with my socal media allowing me to automatically share my latest tweets
+The site could have separate tags for the different types of work that i upload to my site.
+The site could automatically update any numerical values that put in the site
+The Contact page could contain a form that allows the user to automatically send me a message.
+The website could have functionality to automatically display my latest github projects
+-Create Database
+
+
+##WOULD
+The site would have animations allowing for more style.
+The site would have integration with my linked in page to update my status, where i am working and howlong for
+The site would habe a feature where it would have a fun animation on my birthday
