@@ -1,3 +1,21 @@
+
+.container{
+	width: 90%;
+	height: 90%;
+	
+	background: aqua;
+}
+
+.leftBar{
+	margin-left: 5%;
+	width: 20%;
+}
+
+.mainBody{
+	margin-left: 30%;
+	margin-right: 70%;
+}
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -9,7 +27,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: inline;
+    display: block;
     margin-right: 20px;
 }
 a {
