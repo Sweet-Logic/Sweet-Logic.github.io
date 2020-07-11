@@ -2,12 +2,6 @@
   box-sizing: border-box;
 }
 
-nav{
-  background: #ffffff;
-  box-sizing: content-box;
-  height: 50px;
-  margin-bottom: 20px;
-}
 body {
   font-family: Arial;
   padding: 20px;

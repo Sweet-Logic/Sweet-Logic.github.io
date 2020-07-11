@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<!-- link to main stylesheet -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<div class="Nav">
 			<ul>
 				
@@ -11,6 +12,14 @@
 				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</div>
+		
+		<script>
+			 $.getJSON("https://Sweet-Logic.github.io/data/Posts.json")
+    			.done(function( data ) {
+					
+       			console.log(data.Title)
+    		});
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="stylesheet" type="text/css" href="css/main.css">
