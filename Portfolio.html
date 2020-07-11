@@ -14,11 +14,13 @@
 		</div>
 		
 		<script>
+			var PostTitle = "Temp";
 			 $.getJSON("https://Sweet-Logic.github.io/data/Posts.json")
     			.done(function( data ) {
-					
+					PostTitle = data.Title;
        			console.log(data.Title)
-    		});
+				   document.getElementById("ProjTitle").innerHTML = PostTitle;
+			});
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -34,7 +36,7 @@
 	<div class="row">
 	  <div class="leftcolumn">
 		<div class="card">
-		  <h2>Project Heading</h2>
+		  <h2 id = "ProjTitle">Project Heading</h2>
 		  <h5>Short Project Desc, Dec 7, 2017 <t>Language: C++</t>    Project Type: Self</h5>
 		  <div class="fakeimg" style="height:200px;">Project Image</div>
 		  <p>Project Title</p>
@@ -66,7 +68,6 @@
 		</div>
 	  </div>
 	</div>
-	
 	<div class="footer">
 	  <h2>Footer</h2>
 	  <ul>
