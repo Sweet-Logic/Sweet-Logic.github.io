@@ -5,7 +5,7 @@
             "ShortDesc" : "Short Desc",
             "Date" : "date",
             "Language" : "c++",
-            "ImagePath" : "ImagePath.png",
+            "ImagePath" : "Source/Images/Test.png",
             "ProjectDesc" : "Project Desc"
         }
     ]
