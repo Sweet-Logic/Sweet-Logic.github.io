@@ -18,8 +18,9 @@
 			 $.getJSON("https://Sweet-Logic.github.io/data/Posts.json")
     			.done(function( data ) {
 					PostTitle = data.Title;
-       			console.log(data.Title);
-				   document.getElementById("ProjTitle").innerHTML = PostTitle;
+       				console.log("Pre set indder HTML:" +  data.Title);
+					   document.getElementById("ProjTitle").innerHTML = PostTitle;
+       				console.log("Post set indder HTML:" +  data.Title);
 			});
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
