@@ -3,7 +3,7 @@
 	<head>
 		<!-- link to main stylesheet -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-
+		<script type="text/javascript" src="Includes/JavaScript/CreatePosts.js"></script>
 		<script>
 			var PostTitle = "Temp";
 			window.addEventListener('load', function(){
@@ -11,9 +11,13 @@
     			.done(function( data ) {
 					
 					PostTitle = data.Title;
-       				console.log("Pre set indder HTML:" +  data.Title);
-					   document.getElementById("ProjTitle").innerHTML = PostTitle;
-       				console.log("Post set indder HTML:" +  data.Title);
+					console.log("Pre set indder HTML:" +  PostTitle);
+					var curr = data.Posts[0];
+					  /* document.getElementById("ProjTitle").innerHTML = CreatePost( curr.Title,
+					    shortdesc, date, language, image,projectdesc); */
+						document.getElementById("Posts").innerHTML = CreateFromArray(data);
+						console.log("Post set indder HTML:" +  curr.Title);
+
 			})});
 		</script>		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,13 +49,7 @@
 		  <p>Project Title</p>
 		  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 		</div>
-		<div class="card">
-		  <h2>TITLE HEADING</h2>
-		  <h5>Title description, Sep 2, 2017</h5>
-		  <div class="fakeimg" style="height:200px;">Image</div>
-		  <p>Some text..</p>
-		  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-		</div>
+		<div id="Posts"></div>
 	  </div>
 	  <div class="rightcolumn">
 		<div class="card">
